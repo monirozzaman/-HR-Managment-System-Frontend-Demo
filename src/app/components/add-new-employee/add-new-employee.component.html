@@ -1,1 +1,64 @@
-<p class="mt-199">add-new-employee works!</p>
+<section class="content " style="margin-top: 3%">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+
+      </div>
+      <!-- left column -->
+      <div class="col-md-8 mt-5">
+        <!-- general form elements -->
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Create New Project</h3>
+          </div>
+
+          <div class="card-body">
+            <div class="form-group">
+              <label>Project Name</label>
+              <input [(ngModel)]="projectName" class="form-control" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label>Project Description</label>
+              <textarea [(ngModel)]="projectDescription" class="form-control"
+                        placeholder="Enter Description"> </textarea>
+            </div>
+            <div class="form-group">
+              <label>Project Description</label>
+              <textarea [(ngModel)]="projectDescription" class="form-control"
+                        placeholder="Enter Description"> </textarea>
+            </div>
+            <div class="form-group">
+              <label>Project Description</label>
+              <textarea [(ngModel)]="projectDescription" class="form-control"
+                        placeholder="Enter Description"> </textarea>
+            </div>
+            <div class="form-group">
+              <label>Project Description</label>
+              <textarea [(ngModel)]="projectDescription" class="form-control"
+                        placeholder="Enter Description"> </textarea>
+            </div>
+            <div class="form-group">
+              <label>Project Description</label>
+              <textarea [(ngModel)]="projectDescription" class="form-control"
+                        placeholder="Enter Description"> </textarea>
+            </div>
+            <div class="form-group">
+              <label>Project Description</label>
+              <textarea [(ngModel)]="projectDescription" class="form-control"
+                        placeholder="Enter Description"> </textarea>
+            </div>
+
+          </div>
+
+
+          <div *ngIf="!editProject" class="card-footer">
+            <button (click)="createNewProject()" class="btn btn-primary" type="submit">Submit</button>
+          </div>
+          <div *ngIf="editProject" class="card-footer">
+            <button (click)="deleteProject()" class="btn btn-primary" type="submit">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

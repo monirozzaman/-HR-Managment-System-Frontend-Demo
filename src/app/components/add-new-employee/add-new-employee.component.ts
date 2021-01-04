@@ -6,6 +6,9 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./add-new-employee.component.css']
 })
 export class AddNewEmployeeComponent implements OnInit {
+  projectName: string;
+  projectDescription: string;
+  editProject: boolean;
 
   constructor() {
   }
@@ -13,4 +16,11 @@ export class AddNewEmployeeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  createNewProject(): void {
+
+  }
+
+  updateProject(): void {
+
+  }
 }
