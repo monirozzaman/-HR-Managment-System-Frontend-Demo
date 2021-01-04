@@ -1,1 +1,56 @@
-<p>deshboard works!</p>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <a class="navbar-brand" href="index.html">Application Life Cycle</a>
+  <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse"
+          type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+      <li class="nav-item" data-placement="right" data-toggle="tooltip" title="Projects">
+        <a [routerLink]="['/dashboard/list-employees']" class="nav-link">
+          <i class="fa fa-fw fa-dashboard"></i>
+          <span class="nav-link-text">Employee List</span>
+        </a>
+      </li>
+
+      <li class="nav-item" data-placement="right" data-toggle="tooltip" title="Components">
+        <a [routerLink]="['/dashboard/add-new-employee']" class="nav-link">
+          <i class="fa fa-fw fa-dashboard"></i>
+          <span class="nav-link-text">Add New Employee</span>
+        </a>
+      </li>
+
+
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <form class="form-inline my-2 my-lg-0 mr-lg-2">
+          <div class="input-group">
+            <input class="form-control" placeholder="Search for..." type="text">
+            <span class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+          </div>
+        </form>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-target="#exampleModal" data-toggle="modal">
+          <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="content-wrapper">
+  <div class="container-fluid">
+
+    <router-outlet></router-outlet>
+  </div>
+</div>
+</body>
+

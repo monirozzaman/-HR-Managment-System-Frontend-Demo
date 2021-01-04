@@ -1,0 +1,59 @@
+<section class="content">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Business Requirement Information</h3>
+
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <table class="table table-bordered table-striped" id="example1">
+            <thead>
+            <tr>
+              <th>SL.</th>
+              <th>Employee Name</th>
+              <th>Employee Id</th>
+              <th>Phone Number</th>
+              <th>Joining Date</th>
+              <th>Email</th>
+              <th>Bank Ac No</th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody *ngFor="let item of projectInfo; let i = index">
+            <tr>
+              <td>{{i + 1}}</td>
+              <td>{{item.project.name}}</td>
+              <td>{{item.brId}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.brTitle}}</td>
+              <td>{{item.description}}</td>
+              <td>
+                <a *ngIf="item.fileUrl" class="btn btn-outline-danger" href="{{item.fileUrl}}">Download</a>
+              </td>
+              <td>
+                <div>
+                  <!-- <button class="btn btn-outline-success mr-2">view</button>-->
+                  <button (click)="editProject(item.id)" class="btn btn-outline-warning mr-2">Edit</button>
+                  <button (click)="deleteProject(item.id)" class="btn btn-outline-danger">Delete</button>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.col -->
+  </div>
+  <!-- /.row -->
+</section>
+<!-- /.content -->
+<!-- /.content-wrapper -->
+
+
+
+
