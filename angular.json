@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "hr-management-frontend"
+  "defaultProject": "hr-management-frontend",
+  "cli": {
+    "analytics": "582a0573-4b14-4520-bcae-0f1c0bd36f59"
+  }
 }
